@@ -1,0 +1,16 @@
+:root {
+    /* Colors */
+    --white: #fff;
+    --primary-color: #F59E0B;
+    --secondary-color: #15BEF0;
+    --accent-color: #0F766E;
+    --primary-text: #1F2937;
+    --secondary-text: #fff;
+    --footer-one: #002C35;
+    --footer-two: #001A22;
+    --footer-three: #0F3A44;
+
+    /* Fonts */
+    --primary-font: 'Baloo 2', 'Helvetica Neue', Arial, sans-serif;
+    --secondary-font: 'Nunito', 'Helvetica Neue', Arial, sans-serif;
+}
