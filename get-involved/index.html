@@ -1,19 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Science Museum</title>
     <meta name="description" content="Community Science Museum">
+    <!-- End of Meta -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- End of Google Fonts -->
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="./../assets/css/styles.css">
 </head>
 <body>
-    <header>
+    <!-- Header Section -->
+    <header class="layout">
+        <div class="header__content content">
+            <!-- Logo -->
+            <a href="./../">
+                <img src="./../assets/img/logo.png" alt="Community Science Museum">
+            </a>
 
+            <!-- Navigation links start here -->
+            <nav aria-label="Main menu">
+                <ul>
+                    <li><a href="./../explore/">Explore</a></li>
+                    <li><a href="./../exhibitions/">Exhibitions</a></li>
+                    <li><a href="./../events/">Events</a></li>
+                    <li><a href="./../visit/">Visit</a></li>
+                    <li><a href="./../get-involved/">Get involved</a></li>
+                </ul>
+            </nav>
+            <!-- Navigation links end here -->
+
+            <!-- Hamburger menu start here -->
+            <input type="checkbox" id="hamburger__checkbox">
+            <label for="hamburger__checkbox" class="hamburger__open">
+                <img src="./../assets/img/hamburger_icon.png" alt="" aria-hidden="true">
+            </label>
+
+            <!-- Hamburger menu content -->
+            <div class="hamburger__menu">
+                <div class="hamburger__top">
+                    <!-- Logo inside of hamburger menu -->
+                    <a href="./../">
+                        <img src="./../assets/img/logo.png" alt="Community Science Museum">
+                    </a>
+                    <!-- Close button for hamburger menu -->
+                    <label for="hamburger__checkbox" class="hamburger__close">
+                        <img src="./../assets/img/hamburger_close.png" alt="" aria-hidden="true">
+                    </label>
+                </div>
+
+                <!-- Navigation links start here -->
+                <nav class="hamburger__content">
+                    <a href="./../explore/">Explore</a>
+                    <a href="./../exhibitions/">Exhibitions</a>
+                    <a href="./../events/">Events</a>
+                    <a href="./../visit/">Visit</a>
+                    <a href="./../get-involved/">Get involved</a>
+                </nav>
+                <!-- Navigation links end here -->
+            </div>
+            <!-- CTA button -->
+            <a href="./../visit/" class="header__button">Grab your tickets</a>
+        </div>
     </header>
+    <!-- End of Header Section -->
     <main>
 
     </main>

@@ -10,6 +10,9 @@
     --footer-two: #001A22;
     --footer-three: #0F3A44;
 
+    /* Gaps */
+    --desktop-gap: 32px;
+
     /* Fonts */
     --primary-font: 'Baloo 2', 'Helvetica Neue', Arial, sans-serif;
     --secondary-font: 'Nunito', 'Helvetica Neue', Arial, sans-serif;

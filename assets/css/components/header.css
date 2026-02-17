@@ -1,0 +1,95 @@
+/* Base */
+
+header,
+.hamburger__menu {
+    background-color: var(--white);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+header {
+    width: 100vw;
+    z-index: 50;
+    position: fixed;
+}
+
+.header__content,
+.hamburger__top,
+.hamburger__content,
+#hamburger__checkbox:checked ~ .hamburger__menu {
+    display: flex;
+}
+
+.header__content,
+.hamburger__top {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content ul,
+.header__button,
+.hamburger__menu,
+#hamburger__checkbox {
+    display: none;
+}
+
+.header__content ul {
+    gap: var(--desktop-gap);
+}
+
+/* Typography */
+
+nav li a,
+.header__button,
+.hamburger__menu a {
+    font-family: var(--secondary-font);
+    color: var(--primary-text);
+}
+
+nav li a,
+.header__button {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.hamburger__menu a {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+/* Components */
+
+.header__button {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+}
+
+.hamburger__menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 16px 32px 16px;
+}
+
+.hamburger__content,
+#hamburger__checkbox:checked ~ .hamburger__menu {
+    flex-direction: column;
+    gap: var(--desktop-gap);
+    overflow: hidden;
+}
+
+/* Responsive breakpoints */
+
+@media (min-width: 1152px) {
+    .header__content ul,
+    .header__button {
+        display: flex;
+    }
+
+    .hamburger__open,
+    .hamburger__close,
+    #hamburger__checkbox:checked ~ .hamburger__menu {
+        display: none;
+    }
+}

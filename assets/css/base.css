@@ -1,3 +1,53 @@
+/* Base */
+
 html {
     font-size: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Custom layout classes */
+
+.layout {
+    width: 100%;
+}
+
+.content {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/* Responsive breakpoints */
+
+@media (min-width: 768px) {
+    .content {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 1152px) {
+    .content {
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .content {
+        padding: 0 220px;
+    }
 }
