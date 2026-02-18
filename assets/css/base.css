@@ -32,6 +32,10 @@ a {
     display: grid;
 }
 
+.footer__bg {
+    background-color: var(--footer-one);
+}
+
 /* Responsive breakpoints */
 
 @media (min-width: 768px) {
