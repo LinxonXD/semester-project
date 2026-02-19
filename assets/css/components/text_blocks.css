@@ -1,0 +1,112 @@
+/* Base */
+
+.text__block,
+.mirrored {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-top: 32px;
+}
+
+.text__block {
+    padding-bottom: 64px;
+}
+
+.mirrored {
+    padding-bottom: 32px;
+}
+
+.block__one,
+.block__teacher,
+.headings {
+    flex-direction: column;
+}
+
+.block__one {
+    justify-content: center;
+    gap: 16px;
+}
+
+.block__teacher {
+    gap: 16px;
+    max-width: 819px;
+    padding-top: 64px;
+    padding-bottom: 32px;
+    font-weight: 500;
+}
+
+/* Typography */
+
+.block__one,
+.block__teacher {
+    font-family: var(--secondary-font);
+    font-size: 1.125rem;
+    color: var(--primary-text);
+}
+
+.block__one h2,
+.block__teacher h2 {
+    font-family: var(--primary-font);
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+.texts p {
+    margin-bottom: 24px;
+}
+
+.texts p:last-child {
+    margin-bottom: 0;
+}
+
+.headings h3 {
+    font-family: var(--secondary-font);
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Components */
+
+.block__two img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive breakpoints */
+
+@media (min-width: 1152px) {
+    .text__block,
+    .mirrored {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 88px;
+    }
+
+    .block__one {
+        gap: 36px;
+    }
+
+    .block__one h2,
+    .block__teacher h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .text__block {
+        gap: 159px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .mirrored {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .block__teacher {
+        gap: 36px;
+        padding: 100px 0;
+    }
+}

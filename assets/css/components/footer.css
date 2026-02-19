@@ -51,15 +51,9 @@
 .newsletter__item,
 .navigation__item,
 .navigation__item a,
-.newsletter__form input,
-.subscribe__button {
+.newsletter__form input {
     font-family: var(--secondary-font);
     font-size: 1.125rem;
-}
-
-.newsletter__form input,
-.subscribe__button {
-    font-weight: 500;
 }
 
 .navigation__item h3 {
@@ -94,6 +88,7 @@
     padding: 20px 12px;
     border-radius: 5px;
     border: none;
+    font-weight: 500;
     outline-color: var(--primary-color);
 }
 
@@ -108,20 +103,6 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: none;
-}
-
-.subscribe__button {
-    color: var(--primary-text);
-    border-radius: 5px;
-    border: none;
-    padding: 20px;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    transition: background-color 0.3s ease;
-}
-
-.subscribe__button:hover {
-    background-color: var(--hover-color);
 }
 
 /* Socials */

@@ -26,7 +26,6 @@ header {
 }
 
 .header__content ul,
-.header__button,
 .hamburger__menu,
 #hamburger__checkbox {
     display: none;
@@ -39,14 +38,12 @@ header {
 /* Typography */
 
 nav li a,
-.header__button,
 .hamburger__menu a {
     font-family: var(--secondary-font);
     color: var(--primary-text);
 }
 
-nav li a,
-.header__button {
+nav li a {
     font-size: 1.125rem;
     font-weight: 500;
 }
@@ -57,12 +54,6 @@ nav li a,
 }
 
 /* Components */
-
-.header__button {
-    padding: 20px;
-    border-radius: 30px;
-    background-color: var(--primary-color);
-}
 
 .hamburger__menu {
     position: absolute;
@@ -82,8 +73,7 @@ nav li a,
 /* Responsive breakpoints */
 
 @media (min-width: 1152px) {
-    .header__content ul,
-    .header__button {
+    .header__content ul {
         display: flex;
     }
 

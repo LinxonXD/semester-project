@@ -1,0 +1,49 @@
+/* Base */
+
+.primary__button,
+.subscribe__button,
+.header__button {
+    padding: 20px;
+    width: max-content;
+    font-weight: 500;
+    color: var(--primary-text);
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+.primary__button,
+.header__button {
+    border-radius: 30px;
+}
+
+.subscribe__button {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe__button,
+.header__button {
+    font-family: var(--secondary-font);
+    font-size: 1.125rem;
+}
+
+.header__button {
+    display: none;
+}
+
+/* Hover effect */
+
+.primary__button:hover,
+.subscribe__button:hover,
+.header__button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Responsive breakpoints */
+
+@media (min-width: 1152px) {
+    .header__button {
+        display: flex;
+    }
+}
