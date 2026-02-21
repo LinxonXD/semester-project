@@ -11,7 +11,12 @@
     padding-bottom: 64px;
 }
 
-.mirrored {
+.text__block:last-child {
+    padding-top: 64px;
+}
+
+.mirrored,
+.text__block:last-child {
     padding-bottom: 32px;
 }
 
@@ -97,6 +102,11 @@
     .text__block {
         gap: 159px;
         padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .text__block:last-child {
+        padding-top: 100px;
         padding-bottom: 100px;
     }
 
