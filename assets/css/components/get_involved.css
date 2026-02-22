@@ -1,0 +1,47 @@
+/* Base */
+
+.involved {
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.involved__item {
+    padding: 16px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+/* Typography */
+
+.involved__texts {
+    gap: 24px;
+    flex-direction: column;
+    font-family: var(--secondary-font);
+    font-size: 1.125rem;
+    color: var(--primary-text);
+}
+
+.involved__texts h2 {
+    font-family: var(--primary-font);
+    font-size: 1.625rem;
+}
+
+/* Responsive breakpoints */
+
+@media (min-width: 1152px) {
+    .involved {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .involved__item {
+        padding: 32px;
+    }
+
+    .involved__texts {
+        gap: 24px;
+    }
+
+    .involved__texts h2 {
+        font-size: 1.75rem;
+    }
+}
