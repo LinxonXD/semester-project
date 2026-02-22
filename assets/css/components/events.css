@@ -1,0 +1,33 @@
+/* Base */
+
+.event__additional {
+    flex-direction: row;
+    gap: 32px;
+    padding: 10px 0;
+    border-bottom: 0.5px solid rgba(31, 41, 55, 0.50);
+}
+
+.additional__item {
+    align-items: center;
+    gap: 5px;
+    font-family: var(--secondary-font);
+    font-size: 1.125rem;
+    color: var(--accent-color);
+}
+
+.additional__item img {
+    width: 18px;
+    height: auto;
+}
+
+.events {
+    gap: 16px;
+}
+
+/* Responsive breakpoints */
+
+@media (min-width: 1152px) {
+    .events {
+        gap: 32px;
+    }
+}
