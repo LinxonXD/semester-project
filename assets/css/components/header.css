@@ -13,14 +13,12 @@ header {
 }
 
 .header__content,
-.hamburger__top,
 .hamburger__content,
 #hamburger__checkbox:checked ~ .hamburger__menu {
     display: flex;
 }
 
-.header__content,
-.hamburger__top {
+.header__content {
     justify-content: space-between;
     align-items: center;
 }
@@ -58,9 +56,9 @@ nav li a {
 .hamburger__menu {
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 96px;
     left: 0;
-    padding: 0 16px 32px 16px;
+    padding: 32px 16px;
 }
 
 .hamburger__content,
@@ -78,7 +76,6 @@ nav li a {
     }
 
     .hamburger__open,
-    .hamburger__close,
     #hamburger__checkbox:checked ~ .hamburger__menu {
         display: none;
     }
