@@ -1,0 +1,70 @@
+/* Base */
+
+.visit__full {
+    padding-top: 30px;
+    border-top: 0.5px solid rgba(31, 41, 55, 0.50);
+}
+
+.visit,
+.visit__item {
+    flex-direction: column;
+}
+
+.visit,
+.visit__additional {
+    gap: 16px;
+}
+
+.visit p {
+    margin: 0;
+}
+
+.visit__additional {
+    grid-template-columns: 1fr;
+}
+
+/* Typography */
+
+.visit__item {
+    align-items: center;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 1.125rem;
+    color: var(--primary-text);
+    padding-bottom: 27px;
+}
+
+.visit__item h2 {
+    font-family: var(--primary-font);
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+/* Component */
+
+.visit__item img {
+    width: 46px;
+    height: 46px;
+}
+
+/* Responsive breakpoints */
+
+@media (min-width: 1152px) {
+    .visit {
+        gap: 10px;
+    }
+
+    .visit__additional {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+
+    .visit__item h2 {
+        font-size: 1.75rem;
+    }
+
+    .visit__item img {
+        width: 61px;
+        height: 61px;
+    }
+}
