@@ -2,7 +2,7 @@
 
 .newsletter {
     position: relative;
-    bottom: -286px;
+    margin-bottom: -286px;
     grid-template-columns: 1fr;
     z-index: 2;
 }
@@ -155,8 +155,8 @@
 
 @media (min-width: 1152px) {
     .newsletter {
-        bottom: -142.5px;
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: -142.5px;
     }
 
     .newsletter__left {
