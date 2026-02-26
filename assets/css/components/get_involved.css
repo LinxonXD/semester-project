@@ -3,6 +3,7 @@
 .involved {
     grid-template-columns: 1fr;
     gap: 32px;
+    padding-top: 48px;
 }
 
 .involved__item {
@@ -28,6 +29,12 @@
 
 /* Responsive breakpoints */
 
+@media (min-width: 768px) {
+    .involved {
+        padding-top: 64px;
+    }
+}
+
 @media (min-width: 1152px) {
     .involved {
         grid-template-columns: repeat(3, 1fr);
@@ -43,5 +50,11 @@
 
     .involved__texts h2 {
         font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .involved {
+        padding-top: 96px;
     }
 }

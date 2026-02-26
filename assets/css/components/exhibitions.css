@@ -4,7 +4,6 @@
     grid-template-columns: 1fr;
     gap: 16px;
     padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .exhibition {
@@ -60,8 +59,6 @@
 
     .exhibitions {
         gap: 32px;
-        padding-top: 50px;
-        padding-bottom: 100px;
     }
 
     .exhibition__texts h2 {

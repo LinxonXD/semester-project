@@ -1,7 +1,8 @@
 /* Base */
 
 .visit__full {
-    padding-top: 30px;
+    margin-top: 32px;
+    padding-top: 32px;
     border-top: 0.5px solid rgba(31, 41, 55, 0.50);
 }
 
@@ -49,6 +50,13 @@
 
 /* Responsive breakpoints */
 
+@media (min-width: 768px) {
+    .visit__full {
+        margin-top: 48px;
+        padding-top: 48px;
+    }
+}
+
 @media (min-width: 1152px) {
     .visit {
         gap: 10px;
@@ -66,5 +74,12 @@
     .visit__item img {
         width: 61px;
         height: 61px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .visit__full {
+        margin-top: 64px;
+        padding-top: 64px;
     }
 }

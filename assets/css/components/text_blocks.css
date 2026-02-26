@@ -1,23 +1,21 @@
 /* Base */
 
 .text__block,
+.mirrored,
+.block__teacher {
+    padding-top: 48px
+}
+
+.text__block,
+.mirrored,
+.block__one,
+.block__teacher {
+    gap: 16px;
+}
+
+.text__block,
 .mirrored {
     grid-template-columns: 1fr;
-    gap: 16px;
-    padding-top: 32px;
-}
-
-.text__block {
-    padding-bottom: 64px;
-}
-
-.text__block:last-child {
-    padding-top: 64px;
-}
-
-.mirrored,
-.text__block:last-child {
-    padding-bottom: 32px;
 }
 
 .block__one,
@@ -26,16 +24,24 @@
     flex-direction: column;
 }
 
+.text__block {
+}
+
+.text__block:first-of-type {
+    padding-top: 32px;
+}
+
+.mirrored {
+    margin-top: 48px;
+    padding-bottom: 48px;
+}
+
 .block__one {
     justify-content: center;
-    gap: 16px;
 }
 
 .block__teacher {
-    gap: 16px;
     max-width: 819px;
-    padding-top: 64px;
-    padding-bottom: 32px;
     font-weight: 500;
 }
 
@@ -81,6 +87,19 @@
 
 /* Responsive breakpoints */
 
+@media (min-width: 768px) {
+    .text__block,
+    .mirrored,
+    .block__teacher {
+        padding-top: 64px;
+    }
+
+    .mirrored {
+        margin-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
 @media (min-width: 1152px) {
     .text__block,
     .mirrored {
@@ -99,24 +118,22 @@
 }
 
 @media (min-width: 1440px) {
-    .text__block {
-        gap: 159px;
-        padding-top: 50px;
-        padding-bottom: 100px;
-    }
-
-    .text__block:last-child {
-        padding-top: 100px;
-        padding-bottom: 100px;
+    .text__block,
+    .mirrored,
+    .block__teacher {
+        padding-top: 96px;
     }
 
     .mirrored {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        margin-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .text__block {
+        gap: 159px;
     }
 
     .block__teacher {
         gap: 36px;
-        padding: 100px 0;
     }
 }
