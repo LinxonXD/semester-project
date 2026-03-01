@@ -4,6 +4,7 @@ Purpose:
 - Brainstorming / Research - Color palette & Fonts.
 - Explain CSS pseudo classes.
 - Minor debugging assistance.
+- Review report text.
 
 Outcome:
 Improved understanding of front-end design and development consepts. Code written independently.
